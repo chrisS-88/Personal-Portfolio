@@ -15,3 +15,12 @@
   --color-primary-light: #ff5ec0;
   --color-accent-light: #04c22a;
 }
+
+/* base styles */
+body {
+  background: linear-gradient(#0b132b, #1c2541);
+}
+
+nav li {
+  @apply cursor-pointer;
+}
