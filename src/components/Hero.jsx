@@ -48,12 +48,7 @@ function Hero() {
           className="intro-wrapper relative uppercase w-min  h-2/3 flex flex-col justify-center mx-auto">
           <div className="flex items-center gap-5">
             <h1 className="text-dark-text/75 text-lg">Hi I'm</h1>
-            <svg
-              className="flex-1 text-dark-secondary"
-              viewBox="0 0 100 10"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-hidden="true">
+            <svg className="flex-1 text-dark-primary" viewBox="0 0 100 10" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
               <motion.line
                 variants={pathVariants}
                 x1="0"
@@ -68,10 +63,12 @@ function Hero() {
           </div>
 
           <div>
-            <h2 className="text-7xl md:text-9xl font-semibold">Chris.</h2>
+            <h2 className="text-7xl md:text-9xl font-semibold">
+              Chris<span className="text-dark-text/75">.</span>
+            </h2>
           </div>
           <div>
-            <h2 className="text-dark-secondary   text-lg text-right">
+            <h2 className="text-dark-primary   text-lg text-right">
               Web <br /> Developer
             </h2>
           </div>

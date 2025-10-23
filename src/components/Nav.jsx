@@ -15,14 +15,10 @@ function Nav() {
   };
 
   const linksVariants = {
-    hidden: {
-      opacity: 0,
-    },
+    hidden: {},
     visible: {
-      opacity: 1,
       transition: {
         type: "spring",
-        duration: 5,
         ease: "easeInOut",
         delayChildren: 1.2,
         staggerChildren: 0.3,
@@ -31,7 +27,7 @@ function Nav() {
   };
 
   const linkItemVariants = {
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 0, y: -200 },
     visible: { opacity: 1, y: 0 },
   };
 

@@ -2,12 +2,12 @@
 
 @theme {
   /* dark mode (default) */
-  --color-dark-bg: #0a0f1f;
-  --color-dark-surface: #090c19;
-  --color-dark-text: #e6edf7;
-  --color-dark-primary: #3aff;
-  --color-dark-secondary: #00bcd4;
-  --color-dark-accent: #14f1d9;
+  --color-dark-bg: #040507;
+  --color-dark-surface: #111827;
+  --color-dark-text: #e2e8f0;
+  --color-dark-primary: #9f5fbb;
+  --color-dark-secondary: #c084fc;
+  --color-dark-accent: #e9d5ff;
 }
 
 /* base styles */

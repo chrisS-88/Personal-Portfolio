@@ -16,12 +16,12 @@ function HeroBg() {
   const pathVariants = {
     hidden: {
       opacity: 0,
-      rotate: 180,
+      rotate: 0,
       pathLength: 0,
     },
     visible: {
       opacity: 1,
-      rotate: 0,
+      rotate: 160,
       pathLength: 1,
       transition: {
         duration: 4.5,
@@ -40,10 +40,10 @@ function HeroBg() {
       className="fixed top-0 left-0 w-screen h-screen -z-50"
       version="1.1">
       <defs>
-        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#0a0f1f" />
-          <stop offset="100%" stopColor="#090c19" />
-        </linearGradient>
+        <radialGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#111827" />
+          <stop offset="100%" stopColor="#040507" />
+        </radialGradient>
       </defs>
       <rect width="900" height="600" fill="url(#bgGradient)" />
       <motion.g variants={SvgVariants} initial="hidden" animate="visible">
@@ -52,35 +52,35 @@ function HeroBg() {
             variants={pathVariants}
             d="M0 -109.1L94.5 -54.6L94.5 54.6L0 109.1L-94.5 54.6L-94.5 -54.6Z"
             fill="none"
-            stroke="#00bcd4"
-            stroke-width="2"
+            stroke="#c084fc"
+            stroke-width="3"
           />
         </g>
         <g transform="translate(467 115)">
           <motion.path
             variants={pathVariants}
             d="M0 -27L23.4 -13.5L23.4 13.5L0 27L-23.4 13.5L-23.4 -13.5Z"
-            stroke="#00bcd4"
+            stroke="#c084fc"
             fill="none"
-            stroke-width="2"
+            stroke-width="1"
           />
         </g>
         <g transform="translate(327 415)">
           <motion.path
             variants={pathVariants}
             d="M0 -27L23.4 -13.5L23.4 13.5L0 27L-23.4 13.5L-23.4 -13.5Z"
-            stroke="#00bcd4"
+            stroke="#c084fc"
             fill="none"
-            stroke-width="2"
+            stroke-width="1"
           />
         </g>
         <g transform="translate(165 361)">
           <motion.path
             variants={pathVariants}
             d="M0 -47L40.7 -23.5L40.7 23.5L0 47L-40.7 23.5L-40.7 -23.5Z"
-            stroke="#00bcd4"
+            stroke="#c084fc"
             fill="none"
-            stroke-width="2"
+            stroke-width="1"
           />
         </g>
       </motion.g>
