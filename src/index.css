@@ -2,25 +2,25 @@
 
 @theme {
   /* dark mode (default) */
-  --color-dark: #0b132b;
-  --color-dark-alt: #1c2541;
-  --color-text-dark: #f9f9f9;
-  --color-primary-dark: #3a506b;
-  --color-secondary-dark: #5bc0be;
-  --color-accent-dark: #6fffff;
-
-  /* light mode */
-  --color-bg-light: #facc15;
-  --color-text-light: #6ee7b7;
-  --color-primary-light: #ff5ec0;
-  --color-accent-light: #04c22a;
+  --color-dark-bg: #0a0f1f;
+  --color-dark-surface: #090c19;
+  --color-dark-text: #e6edf7;
+  --color-dark-primary: #3aff;
+  --color-dark-secondary: #00bcd4;
+  --color-dark-accent: #14f1d9;
 }
 
 /* base styles */
 body {
-  background: linear-gradient(#0b132b, #1c2541);
+  @apply text-dark-text font-[Montserrat];
 }
 
-nav li {
-  @apply cursor-pointer;
+nav li,
+a {
+  @apply cursor-pointer hover:text-dark-text/70;
+}
+
+/* socials */
+.socials a {
+  @apply text-3xl max-w-min;
 }

@@ -1,12 +1,16 @@
 import React from "react";
 import Nav from "./components/Nav";
 import About from "./pages/About";
+import HeroBg from "./components/HeroBg";
 
 function App() {
   return (
     <>
-      <Nav />
-      <About />
+      <div>
+        <HeroBg />
+        <Nav />
+        <About />
+      </div>
     </>
   );
 }
