@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
-function Socials() {
+function Socials({
+  socials = [
+    { icon: <AiFillGithub />, href: "https://github.com/chrisS-88" },
+    { icon: <AiFillLinkedin />, href: "https://linkedin.com/in/yourprofile" },
+    { icon: <AiOutlineMail />, href: "mailto:youremail@example.com" },
+  ],
+  hoverScale = 1.5,
+  delayChildren = 2.8,
+  staggerChildren = 0.4,
+}) {
   const socialVariants = {
     hidden: {
       opacity: 0,
@@ -12,8 +21,8 @@ function Socials() {
         type: "spring",
         duration: 2,
         ease: "easeInOut",
-        delayChildren: 2.8,
-        staggerChildren: 0.4,
+        delayChildren: delayChildren,
+        staggerChildren: staggerChildren,
       },
     },
   };
@@ -24,27 +33,22 @@ function Socials() {
   };
 
   return (
-    <motion.div variants={socialVariants} initial="hidden" animate="visible" className="socials flex md:flex-col gap-5">
-      <motion.a
-        variants={socialItemVariants}
-        whileHover={{ scale: 1.1 }}
-        href="https://github.com/chrisS-88"
-        target="_blank"
-        rel="noopener noreferrer">
-        <AiFillGithub />
-      </motion.a>
-      <motion.a
-        variants={socialItemVariants}
-        whileHover={{ scale: 1.1 }}
-        href="https://www.linkedin.com/in/chris-smart88/"
-        target="_blank"
-        rel="noopener noreferrer">
-        <AiFillLinkedin />
-      </motion.a>
-      <motion.a variants={socialItemVariants} whileHover={{ scale: 1.1 }} href="mailto:chrissmart920@gmail.com">
-        <AiOutlineMail />
-      </motion.a>
-    </motion.div>
+    <>
+      <motion.div variants={socialVariants} initial="hidden" animate="visible" className="socials flex md:flex-col gap-5">
+        {socials.map(({ icon, href }, index) => (
+          <motion.a
+            key={index}
+            variants={socialItemVariants}
+            whileHover={{ scale: hoverScale }}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl">
+            {icon}
+          </motion.a>
+        ))}
+      </motion.div>
+    </>
   );
 }
 
