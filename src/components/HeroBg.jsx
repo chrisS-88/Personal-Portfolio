@@ -24,7 +24,7 @@ function HeroBg() {
       rotate: 0,
       pathLength: 1,
       transition: {
-        duration: 5,
+        duration: 4.5,
         ease: "easeInOut",
       },
     },

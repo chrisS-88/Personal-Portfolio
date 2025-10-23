@@ -13,9 +13,10 @@ function Hero() {
       y: 0,
       transition: {
         type: "spring",
-        stiffness: 50,
-        damping: 9,
-        mass: 2,
+        stiffness: 60,
+        damping: 8,
+        mass: 1,
+        velocity: 12,
         delay: 0.25,
       },
     },
@@ -30,7 +31,7 @@ function Hero() {
       opacity: 0.8,
       pathLength: 1,
       transition: {
-        delay: 4,
+        delay: 3.6,
         duration: 1,
         ease: "easeOut",
       },
@@ -75,10 +76,10 @@ function Hero() {
             </h2>
           </div>
         </motion.div>
-        <div className="absolute left-0 bottom-0 p-6">
+        <div className="absolute left-0 bottom-0 p-6 px-6 py-15">
           <Cv />
         </div>
-        <div className="absolute right-0 bottom-0 p-6">
+        <div className="absolute right-0 bottom-0  px-6 py-15">
           <Socials />
         </div>
       </section>

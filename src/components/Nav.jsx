@@ -24,7 +24,7 @@ function Nav() {
         type: "spring",
         duration: 5,
         ease: "easeInOut",
-        delayChildren: 1.5,
+        delayChildren: 1.2,
         staggerChildren: 0.3,
       },
     },

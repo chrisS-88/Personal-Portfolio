@@ -12,8 +12,8 @@ function Socials() {
         type: "spring",
         duration: 2,
         ease: "easeInOut",
-        delayChildren: 2.8,
-        staggerChildren: 0.4,
+        delayChildren: 2.5,
+        staggerChildren: 0.2,
       },
     },
   };
