@@ -15,12 +15,7 @@ body {
   @apply text-dark-text font-[Montserrat];
 }
 
-nav li,
-a {
-  @apply cursor-pointer hover:text-dark-text/70;
-}
-
 /* socials */
 .socials a {
-  @apply text-3xl max-w-min;
+  @apply max-w-min;
 }

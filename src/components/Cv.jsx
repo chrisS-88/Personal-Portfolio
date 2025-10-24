@@ -20,8 +20,8 @@ function Cv() {
   };
 
   return (
-    <motion.div variants={cvVariants} initial="hidden" animate="visible" whileHover={{ rotate: 12, scale: 1.1 }}>
-      <a href="cv.pdf" target="_blank" rel="noopener noreferrer" className=" text-4xl">
+    <motion.div variants={cvVariants} initial="hidden" animate="visible" whileHover={{ rotate: 12, scale: 1.25 }}>
+      <a href="cv.pdf" target="_blank" rel="noopener noreferrer" className=" text-5xl hover:text-dark-accent">
         <PiReadCvLogoThin />
       </a>
     </motion.div>

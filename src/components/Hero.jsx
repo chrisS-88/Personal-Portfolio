@@ -73,10 +73,10 @@ function Hero() {
             </h2>
           </div>
         </motion.div>
-        <div className="absolute left-0 bottom-0 p-6 px-6 py-15">
+        <div className="absolute left-0 bottom-[calc(1rem+env(safe-area-inset-bottom))] p-6 px-6 py-15">
           <Cv />
         </div>
-        <div className="absolute right-0 bottom-0  px-6 py-15">
+        <div className="absolute right-0 bottom-[calc(1rem+env(safe-area-inset-bottom))]  px-6 py-15">
           <Socials />
         </div>
       </section>

@@ -4,10 +4,10 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 function Socials({
   socials = [
     { icon: <AiFillGithub />, href: "https://github.com/chrisS-88" },
-    { icon: <AiFillLinkedin />, href: "https://linkedin.com/in/yourprofile" },
-    { icon: <AiOutlineMail />, href: "mailto:youremail@example.com" },
+    { icon: <AiFillLinkedin />, href: "https://www.linkedin.com/in/chris-smart88" },
+    { icon: <AiOutlineMail />, href: "mailto:chrissmart920@gmail.com" },
   ],
-  hoverScale = 1.5,
+  hoverScale = 1.25,
   delayChildren = 2.8,
   staggerChildren = 0.4,
 }) {
@@ -34,7 +34,7 @@ function Socials({
 
   return (
     <>
-      <motion.div variants={socialVariants} initial="hidden" animate="visible" className="socials flex md:flex-col gap-5">
+      <motion.div variants={socialVariants} initial="hidden" animate="visible" className="socials  flex md:flex-col gap-5">
         {socials.map(({ icon, href }, index) => (
           <motion.a
             key={index}
@@ -43,7 +43,7 @@ function Socials({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-2xl">
+            className="text-4xl hover:text-dark-accent">
             {icon}
           </motion.a>
         ))}

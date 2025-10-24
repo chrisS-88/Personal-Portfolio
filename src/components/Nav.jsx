@@ -46,7 +46,11 @@ function Nav({
         </div>
         <motion.ul variants={linksVariants} initial="hidden" animate="visible" className=" uppercase tracking-wide flex gap-6">
           {links.map((link, index) => (
-            <motion.li key={index} variants={linkItemVariants} whileHover={{ scale: 1.05 }} className="cursor-pointer">
+            <motion.li
+              key={index}
+              variants={linkItemVariants}
+              whileHover={{ scale: 1.1 }}
+              className="cursor-pointer hover:text-dark-accent text-lg">
               {link}
             </motion.li>
           ))}
